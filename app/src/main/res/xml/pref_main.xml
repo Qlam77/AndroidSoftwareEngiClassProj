@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/setting_general_title">
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/unit_dialog_title"
+            android:entries="@array/unit_list"
+            android:entryValues="@array/list_value"
+            android:key="@string/key_unit"
+            android:summary="@string/km_unit"
+            android:title="Unit" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="@string/mode_dialog_title"
+            android:entries="@array/mode_list"
+            android:entryValues="@array/list_value"
+            android:key="@string/key_mode"
+            android:summary="@string/key_mode"
+            android:title="Mode" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Select a color"
+            android:entries="@array/colorList"
+            android:entryValues="@array/list_value"
+            android:key="@string/key_color"
+            android:summary="Colors"
+            android:title="Theme" />
+
+        <ListPreference
+            android:defaultValue="1"
+            android:dialogTitle="Select a text"
+            android:entries="@array/textList"
+            android:entryValues="@array/list_value"
+            android:key="@string/key_text"
+            android:summary="Text"
+            android:title="Text" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_about_title">
+        <Preference
+            android:key="info"
+            android:title="@string/main_title">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.sclfitness.ca/keep-pace" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

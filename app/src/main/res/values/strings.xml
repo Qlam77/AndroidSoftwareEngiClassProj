@@ -1,0 +1,115 @@
+<resources>
+    <!-- General -->
+    <string name="app_name">KeepPace</string>
+    <string name="app_title">KP</string>
+    <string name="pace_km_per_hr">km/h</string>
+    <string name="pace_mile_per_hr">mi/h</string>
+    <string name="km_unit">Km</string>
+    <string name="mile_unit">Mile</string>
+    <string name="setting_title">Settings</string>
+
+    <!-- SettingsActivity -->
+    <string name="setting_general_title">General</string>
+    <string name="unit_dialog_title">Select a unit</string>
+    <string name="key_unit">key_unit</string>
+    <string-array name="unit_list">
+        <item>Km</item>
+        <item>Mile</item>
+    </string-array>
+
+    <string name="mode_dialog_title">Select a mode</string>
+    <string name="key_mode">key_mode</string>
+    <string-array name="mode_list">
+        <item>Regular</item>
+        <item>Pro</item>
+    </string-array>
+
+    <string name="colorTheme">Select a theme</string>
+    <string name="key_color">key_color</string>
+    <string-array name="colorList">
+        <item>Light</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string name="textTheme">Select a text</string>
+    <string name="key_text">key_text</string>
+    <string-array name="textList">
+        <item>Regular</item>
+        <item>Funky</item>
+    </string-array>
+
+    <string-array name="list_value">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="setting_about_title">About</string>
+    <string name="About">&lt;a href="http://www.sclfitness.ca/about">Check out more&lt;a></string>
+
+    <!-- UserLogActivity -->
+    <string name="userLog_title">Activity Log</string>
+    <string name="userLog_raceName">Name</string>
+    <string name="userLog_avgPace">Avg. Pace</string>
+    <string name="userLog_bestTime">Best Time</string>
+
+    <!-- RecordsActivity -->
+    <string name="records_pace">Avg.Pace</string>
+    <string name="records_time">Time</string>
+    <string name="upload_title">Upload Records</string>
+    <string name="add_title">Add Records</string>
+    <string name="delete_title">Clear Records</string>
+    <string name="records_date">Date</string>
+
+    <!-- GetStartedActivity -->
+    <string name="getStarted">GET STARTED</string>
+    <string name="TOS">By clicking above, you agree to Keep Pace\'s &lt;a href="http://www.sclfitness.ca/keep-pace-tos">Terms of Service &lt;a></string>
+
+    <!-- MainActivity -->
+    <string name="main_title">KEEP PACE</string>
+    <string name="main_grindPace">GRIND PACE</string>
+    <string name="main_crunchPace">CRUNCH PACE</string>
+    <string name="main_stairCrunch">437 Steps (Left)</string>
+    <string name="main_fullCrunch">457 Steps (Right)</string>
+    <string name="main_racePace">RACE PACE</string>
+
+    <!-- PaceActivity -->
+    <string name="pace_beatTime">BEAT YOUR BEST</string>
+    <string name="pace_grind">JUST GRIND</string>
+    <string name="pace_crunch">JUST CRUNCH</string>
+    <string name="pace_steps">JUST STEP</string>
+    <string name="pace_race">JUST RACE</string>
+    <string name="title_stairCrunch">437 Steps (Left)</string>
+    <string name="title_fullCrunch">457 Steps (Right)</string>
+    <string name="title_race">Races</string>
+    <string name="title_grind">Grouse Grind</string>
+    <string name="title_crunch">Coquitlam Crunch</string>
+
+    <!-- RaceActivity -->
+    <string name="race_fiveK">5 K</string>
+    <string name="race_tenK">10 K</string>
+    <string name="race_halfMarathon">1/2 MARATHON</string>
+    <string name="race_fullMarathon">FULL MARATHON</string>
+
+    <!-- TimerActivity -->
+    <string name="timer_defaultTime">00:00.00</string>
+    <string name="timer_defaultPace">0.00</string>
+    <string name="timer_currentTimeLabel">Current Time:</string>
+    <string name="timer_estimatedTimeLabel">Estimated Finish Time:</string>
+    <string name="timer_currentPaceLabel">Current Pace:</string>
+    <string name="timer_beatTimeLabel">Best Time:</string>
+    <string name="timer_startMarker">Start</string>
+    <string name="timer_pause">Pause</string>
+    <string name="timer_resume">Resume</string>
+    <string name="timer_reset">Reset</string>
+    <string name="timer_finish">Finish</string>
+    <string name="timer_save">Save</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Menu -->
+    <string name="cloud_backup">Cloud Backup</string>
+
+    <!-- Dialog -->
+    <string name="upload_dialog">Upload or Download?</string>
+    <string name="download">Download</string>
+    <string name="upload">Upload</string>
+</resources>

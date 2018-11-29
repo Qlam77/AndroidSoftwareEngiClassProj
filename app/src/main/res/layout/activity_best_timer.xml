@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.sclfitness.keeppace.TimerActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_timer_start"
+        android:layout_alignBottom="@id/linearLayout_startBtnTop"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        android:weightSum="6">
+
+        <TextView
+            android:id="@+id/textView_timer_currentTimeLabel"
+            style="@style/TimerTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/timer_currentTimeLabel"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_timer_currentTime"
+            style="@style/TimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/timer_defaultTime"
+            android:fontFamily="sans-serif"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout_pace"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_timer_paceLabel"
+                    style="@style/TimerTextLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/timer_currentPaceLabel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView_timer_pace"
+                    style="@style/TimerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/timer_defaultPace"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_timer_beatTimeLabel"
+                    style="@style/TimerTextLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/timer_beatTimeLabel"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/textView_timer_beatTime"
+                    style="@style/TimerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/timer_defaultTime"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/button_timer_pauseResume"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/KeepPaceBlue"
+                android:enabled="false"
+                android:onClick="onClickPauseResume"
+                android:text="@string/timer_pause"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_timer_reset"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@color/KeepPaceBlue"
+                android:enabled="false"
+                android:onClick="onClickReset"
+                android:text="@string/timer_reset"
+                android:textColor="#FFFFFF"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_timer_estimatedTimeLabel"
+            style="@style/TimerTextLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/timer_estimatedTimeLabel"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView_timer_estimatedTime"
+            style="@style/TimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/timer_defaultTime"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_timer_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bottom_button"
+        android:enabled="false"
+        android:onClick="onClickSave"
+        android:text="@string/timer_save"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout_startBtnTop"
+        android:layout_above="@id/button_timer_start"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_timer_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bottom_button"
+        android:onClick="onClickStart"
+        android:text="@string/timer_startMarker"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView_timer_markers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="none"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_timer_markers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

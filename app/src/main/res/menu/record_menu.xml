@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/add_action"
+        android:title="@string/add_title"
+        android:icon="@drawable/ic_add_white"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/delete_action"
+        android:title="@string/delete_title"
+        android:icon="@drawable/ic_delete_forever_white_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/upload_to_cloud"
+        android:title="@string/cloud_backup"
+        android:icon="@drawable/cloud"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/upload_action"
+        android:title="@string/upload_title"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        app:showAsAction="ifRoom" />
+</menu>

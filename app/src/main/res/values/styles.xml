@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/KeepPaceBlue</item>
+        <item name="colorPrimaryDark">@color/DarkKeepPaceBlue</item>
+        <item name="colorAccent">@color/AccentKeepPaceBlue</item>
+        <item name="actionModeShareDrawable">@drawable/ic_cloud_upload_white_24dp</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/KeepPaceBlue</item>
+        <item name="colorPrimaryDark">@color/DarkKeepPaceBlue</item>
+        <item name="colorAccent">@color/AccentKeepPaceBlue</item>
+        <item name="actionModeShareDrawable">@drawable/ic_cloud_upload_white_24dp</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <!-- General button layout -->
+    <style name="ButtonLayout">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <!-- RaceActivity button -->
+    <style name="RaceButton">
+        <item name="android:layout_width">175dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button</item>
+    </style>
+
+    <!-- TimerActivity text -->
+    <style name="TimerText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- TimerActivity label -->
+    <style name="TimerTextLabel">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <!-- TOS popup -->
+
+    <style name="TranslucentPopUp">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">@color/LightGrey</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+</resources>

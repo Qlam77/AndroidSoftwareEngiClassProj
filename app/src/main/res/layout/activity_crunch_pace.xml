@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.sclfitness.keeppace.CrunchPaceActivity">
+
+    <Button
+        android:id="@+id/button_crunch_fullCrunch"
+        style="@style/ButtonLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_crunch_stairCrunch"
+        android:layout_marginTop="60dp"
+        android:onClick="onClickFullCrunch"
+        android:text="@string/main_fullCrunch" />
+
+    <Button
+        android:id="@+id/button_crunch_stairCrunch"
+        style="@style/ButtonLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:onClick="onClickStairCrunch"
+        android:text="@string/main_stairCrunch" />
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ca.sclfitness.keeppace.MainActivity">
+
+    <Button
+        android:id="@+id/button_main_grindPace"
+        style="@style/ButtonLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:onClick="onClickGrind"
+        android:text="@string/main_grindPace" />
+
+    <Button
+        android:id="@+id/button_main_crunchPace"
+        style="@style/ButtonLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_main_grindPace"
+        android:layout_marginTop="80dp"
+        android:onClick="onClickCrunch"
+        android:text="@string/main_crunchPace" />
+
+
+    <Button
+        android:id="@+id/button_main_racePace"
+        style="@style/ButtonLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button_main_crunchPace"
+        android:layout_marginTop="80dp"
+        android:onClick="onClickRace"
+        android:text="@string/main_racePace" />
+
+</RelativeLayout>

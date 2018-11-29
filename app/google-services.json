@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "784304027298",
+    "firebase_url": "https://keeppaceandroid.firebaseio.com",
+    "project_id": "keeppaceandroid",
+    "storage_bucket": "keeppaceandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784304027298:android:afd8d33675d78792",
+        "android_client_info": {
+          "package_name": "ca.sclfitness.keeppace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "784304027298-reoifp349h2jmu838e6s6kefnlautdj8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbfjTtPqosR8NfYlFvPy485-MvEmwA6sQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
